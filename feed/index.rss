@@ -9,26 +9,77 @@
 
 <channel>
 	<title>Axel Segebrecht</title>
-	<atom:link href="http://axels-site.local/feed/" rel="self" type="application/rss+xml" />
-	<link>http://axels-site.local</link>
+	<atom:link href="https://www.axelsegebrecht.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.axelsegebrecht.com</link>
 	<description>Life, technology and everything</description>
-	<lastBuildDate>Sun, 06 May 2018 17:58:20 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 21 Jun 2018 06:26:29 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	
+	<generator>https://wordpress.org/?v=4.9.6</generator>
 
 <image>
 	<url>https://res.cloudinary.com/axel/w_32,h_32,c_fill/auto-mapping-folder/2017/07/cropped-IMG_7395.jpg</url>
 	<title>Axel Segebrecht</title>
-	<link>http://axels-site.local</link>
+	<link>https://www.axelsegebrecht.com</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">96963046</site>	<item>
+		<title>Our brains can&#8217;t quit our gadgets—that didn&#8217;t happen by accident says Popular Science</title>
+		<link>https://www.axelsegebrecht.com/our-brains-cant-quit-our-gadgets-that-didnt-happen-by-accident-says-popular-science/</link>
+		<pubDate>Thu, 21 Jun 2018 06:23:22 +0000</pubDate>
+		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
+				<category><![CDATA[Links of interest]]></category>
+		<category><![CDATA[Mental Health]]></category>
+		<category><![CDATA[UX]]></category>
+
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
+		<description><![CDATA[Something of concern for people who like to stay in control of their mental wellbeing. This links nicely to my forthcoming article on digital lifestyle and mental health. Your obsession with your smartphone isn’t an accident. The devices—and apps inside them—are entrancing by design, earning them comparisons to gambling, sugar, and tobacco. Source: Our brains [&#8230;]]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">514</post-id>	</item>
+		<item>
+		<title>Inside a volcano scientist’s campaign for congress</title>
+		<link>https://www.axelsegebrecht.com/inside-a-volcano-scientists-campaign-for-congress/</link>
+		<comments>https://www.axelsegebrecht.com/inside-a-volcano-scientists-campaign-for-congress/#respond</comments>
+		<pubDate>Wed, 20 Jun 2018 20:33:07 +0000</pubDate>
+		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
+				<category><![CDATA[Links of interest]]></category>
+		<category><![CDATA[Politics]]></category>
+		<category><![CDATA[Science]]></category>
+		<category><![CDATA[Women]]></category>
+
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
+		<description><![CDATA[In the Age of Dumb, we need people involved in politics who can counter emotional topics with a cool, level headed approach.]]></description>
+		<wfw:commentRss>https://www.axelsegebrecht.com/inside-a-volcano-scientists-campaign-for-congress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">509</post-id>	</item>
+		<item>
+		<title>Theresa May reported to ad watchdog over &#8216;Brexit dividend&#8217; for NHS claim reports Sky News</title>
+		<link>https://www.axelsegebrecht.com/theresa-may-reported-to-ad-watchdog-over-brexit-dividend-for-nhs-claim-reports-sky-news/</link>
+		<pubDate>Wed, 20 Jun 2018 18:47:13 +0000</pubDate>
+		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
+				<category><![CDATA[Links of interest]]></category>
+		<category><![CDATA[Brexit]]></category>
+		<category><![CDATA[NHS]]></category>
+
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
+		<description><![CDATA[I find it unforgiving that our government sees it fit to double down on a lie first conceived to dupe voters into Brexit would mean more cash.]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">501</post-id>	</item>
+		<item>
+		<title>China’s plastic waste ban will leave 111 million tons of trash with nowhere to go reports The Verge</title>
+		<link>https://www.axelsegebrecht.com/chinas-plastic-waste-ban-will-leave-111-million-tons-of-trash-with-nowhere-to-go-reports-the-verge/</link>
+		<pubDate>Wed, 20 Jun 2018 18:38:37 +0000</pubDate>
+		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
+				<category><![CDATA[Links of interest]]></category>
+		<category><![CDATA[Plastic]]></category>
+
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
+		<description><![CDATA[Not sure this will help making our oceans cleaner :'( We need to stop using plastic and vote with our feet as consumers in order to curb this.]]></description>
+	<post-id xmlns="com-wordpress:feed-additions:1">497</post-id>	</item>
+		<item>
 		<title>To EV or not EV</title>
-		<link>http://axels-site.local/to-ev-or-not-ev/</link>
-		<comments>http://axels-site.local/to-ev-or-not-ev/#respond</comments>
+		<link>https://www.axelsegebrecht.com/to-ev-or-not-ev/</link>
+		<comments>https://www.axelsegebrecht.com/to-ev-or-not-ev/#respond</comments>
 		<pubDate>Sun, 06 May 2018 16:21:30 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Opinions, Hearsay and Fantastic Stories]]></category>
@@ -38,30 +89,30 @@
 		<category><![CDATA[Nissan Leaf]]></category>
 		<category><![CDATA[Tesla]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=458</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Thoughts on buying an electric vehicle (EV)]]></description>
-		<wfw:commentRss>http://axels-site.local/to-ev-or-not-ev/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/to-ev-or-not-ev/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">458</post-id>	</item>
 		<item>
 		<title>Link: Sam Amrami tracks you in Pret. And at Starbucks. And down the pub</title>
-		<link>http://axels-site.local/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/</link>
-		<comments>http://axels-site.local/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/#respond</comments>
+		<link>https://www.axelsegebrecht.com/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/</link>
+		<comments>https://www.axelsegebrecht.com/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/#respond</comments>
 		<pubDate>Sat, 24 Feb 2018 13:48:20 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Links of interest]]></category>
 		<category><![CDATA[Privacy]]></category>
 		<category><![CDATA[Tracking]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=442</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Amrani&#8217;s startup, Tamoco, tracks the location of 100 million smartphone owners through a global collection of 1.1 billion “proximity sensors,” Source: Sam Amrami tracks you in Pret. And at Starbucks. And down the pub &#124; WIRED UK]]></description>
-		<wfw:commentRss>http://axels-site.local/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/link-sam-amrami-tracks-you-in-pret-and-at-starbucks-and-down-the-pub/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">442</post-id>	</item>
 		<item>
 		<title>Dipping my toe into fiverr.com or how I joined the gig economy</title>
-		<link>http://axels-site.local/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/</link>
-		<comments>http://axels-site.local/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/#respond</comments>
+		<link>https://www.axelsegebrecht.com/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/</link>
+		<comments>https://www.axelsegebrecht.com/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/#respond</comments>
 		<pubDate>Wed, 21 Feb 2018 17:37:49 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Opinions, Hearsay and Fantastic Stories]]></category>
@@ -70,15 +121,15 @@
 		<category><![CDATA[Hugo]]></category>
 		<category><![CDATA[Netlify]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=431</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Fiverr.com is probably the centre-ground of the online gig economy, like Uber IRL, it provides a market place and platform for budding freelancers. Services you can get for more or less than $5 are ranging from advertising on body parts to Zumba workouts and everything in between. So why would somebody with a full-time job [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/dipping-my-toe-into-fiverr-com-or-how-i-joined-the-gig-economy/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">431</post-id>	</item>
 		<item>
 		<title>Bearhug</title>
-		<link>http://axels-site.local/bearhug/</link>
-		<comments>http://axels-site.local/bearhug/#respond</comments>
+		<link>https://www.axelsegebrecht.com/bearhug/</link>
+		<comments>https://www.axelsegebrecht.com/bearhug/#respond</comments>
 		<pubDate>Sun, 11 Feb 2018 15:37:09 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Opinions, Hearsay and Fantastic Stories]]></category>
@@ -88,15 +139,15 @@
 		<category><![CDATA[Notion]]></category>
 		<category><![CDATA[Productivity]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=417</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Once upon a time you’d see me clutching my trusty Filofax in one hand and cappuccino in the other. Today, not much has changed and the Filofax has been replaced by my iPhone 7plus and the cappuccino has become a cup of tea. Mobile first I live on my phone first and MacBook Air second, [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/bearhug/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/bearhug/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">417</post-id>	</item>
 		<item>
 		<title>Brandyourself.com review</title>
-		<link>http://axels-site.local/brandyourself-review/</link>
-		<comments>http://axels-site.local/brandyourself-review/#respond</comments>
+		<link>https://www.axelsegebrecht.com/brandyourself-review/</link>
+		<comments>https://www.axelsegebrecht.com/brandyourself-review/#respond</comments>
 		<pubDate>Sun, 04 Feb 2018 12:36:38 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Opinions, Hearsay and Fantastic Stories]]></category>
@@ -107,15 +158,15 @@
 		<category><![CDATA[Social Media]]></category>
 		<category><![CDATA[Twitter]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=400</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Reading Oliver&#8217;sadvertorial(?) review of Brandyourself.com&#8217;s online reputation service, I could&#8217;t help but wonder how my score would turn out. I refrain from swearing and am somewhat conscious of what I put in the public view. Let&#8217;s see what their algorithms and machine learning tool makes of my behaviour. Brand yourself happy Brandyourself.com connects to your [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/brandyourself-review/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/brandyourself-review/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">400</post-id>	</item>
 		<item>
 		<title>Link: Why Privacy Is Under Attack &#8211; ProtonMail Blog</title>
-		<link>http://axels-site.local/link-why-privacy-is-under-attack-protonmail-blog/</link>
-		<comments>http://axels-site.local/link-why-privacy-is-under-attack-protonmail-blog/#respond</comments>
+		<link>https://www.axelsegebrecht.com/link-why-privacy-is-under-attack-protonmail-blog/</link>
+		<comments>https://www.axelsegebrecht.com/link-why-privacy-is-under-attack-protonmail-blog/#respond</comments>
 		<pubDate>Sun, 28 Jan 2018 14:09:20 +0000</pubDate>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 				<category><![CDATA[Links of interest]]></category>
@@ -123,73 +174,10 @@
 		<category><![CDATA[Google]]></category>
 		<category><![CDATA[Privacy]]></category>
 
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=393</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Most of us at ProtonMail are part of the last generation born before the World Wide Web was created in 1989 at CERN in Switzerland.  In the last 25 years, the web has transformed our world and we now spend more and more of our lives online. Source: Why Privacy Is Under Attack &#8211; ProtonMail [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/link-why-privacy-is-under-attack-protonmail-blog/feed/</wfw:commentRss>
+		<wfw:commentRss>https://www.axelsegebrecht.com/link-why-privacy-is-under-attack-protonmail-blog/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 	<post-id xmlns="com-wordpress:feed-additions:1">393</post-id>	</item>
-		<item>
-		<title>Link: How to Live Without Google</title>
-		<link>http://axels-site.local/link-how-to-live-without-google/</link>
-		<comments>http://axels-site.local/link-how-to-live-without-google/#respond</comments>
-		<pubDate>Sun, 28 Jan 2018 12:58:56 +0000</pubDate>
-		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
-				<category><![CDATA[Links of interest]]></category>
-		<category><![CDATA[Google]]></category>
-		<category><![CDATA[Privacy]]></category>
-
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=389</guid>
-		<description><![CDATA[Google tracking is more pervasive than most people realize. We show you some alternatives to Google services to limit your exposure. Source: How to Live Without Google]]></description>
-		<wfw:commentRss>http://axels-site.local/link-how-to-live-without-google/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">389</post-id>	</item>
-		<item>
-		<title>Link: Facebook Only Cares About Facebook</title>
-		<link>http://axels-site.local/link-facebook-only-cares-about-facebook/</link>
-		<comments>http://axels-site.local/link-facebook-only-cares-about-facebook/#respond</comments>
-		<pubDate>Sun, 28 Jan 2018 09:28:31 +0000</pubDate>
-		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
-				<category><![CDATA[Links of interest]]></category>
-		<category><![CDATA[Facebook]]></category>
-
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=373</guid>
-		<description><![CDATA[Whatever Mark Zuckerberg says about human community or his legacy, his company is acting in its own interests—and against the public good. Source: www.theatlantic.com/technology/archive/2018/01/facebook-doesnt-care/551684/]]></description>
-		<wfw:commentRss>http://axels-site.local/link-facebook-only-cares-about-facebook/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">373</post-id>	</item>
-		<item>
-		<title>Google began selling its Clips camera today</title>
-		<link>http://axels-site.local/google-began-selling-its-clips-camera-today/</link>
-		<comments>http://axels-site.local/google-began-selling-its-clips-camera-today/#respond</comments>
-		<pubDate>Sat, 27 Jan 2018 23:34:11 +0000</pubDate>
-		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
-				<category><![CDATA[Privacy, Liberty and Equality]]></category>
-		<category><![CDATA[Google]]></category>
-		<category><![CDATA[Privacy]]></category>
-
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=364</guid>
-		<description><![CDATA[I have no words right now. This is madness. (the clip is a) small device that uses artificial intelligence to take the right picture when it sees something interesting ? Source: Google began selling its Clips camera today &#124; The Verge There is a shimmer of light in all this of course: Not everyone is [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/google-began-selling-its-clips-camera-today/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">364</post-id>	</item>
-		<item>
-		<title>Link: Why I told my friends to stop using WhatsApp and Telegram</title>
-		<link>http://axels-site.local/link-why-i-told-my-friends-to-stop-using-whatsapp-and-telegram/</link>
-		<comments>http://axels-site.local/link-why-i-told-my-friends-to-stop-using-whatsapp-and-telegram/#respond</comments>
-		<pubDate>Sat, 27 Jan 2018 19:39:30 +0000</pubDate>
-		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
-				<category><![CDATA[Links of interest]]></category>
-		<category><![CDATA[Facebook]]></category>
-		<category><![CDATA[Messenger]]></category>
-		<category><![CDATA[Privacy]]></category>
-		<category><![CDATA[Signal]]></category>
-		<category><![CDATA[Telegram]]></category>
-		<category><![CDATA[WhatsApp]]></category>
-
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=236</guid>
-		<description><![CDATA[Good post if you are looking for what encrypted messenger to use. Read it all the way to the end to find some links if you are still wondering about why privacy matters: Even with end-to-end encryption Big Brother is still in your phone: metadata Source: Why I told my friends to stop using WhatsApp [&#8230;]]]></description>
-		<wfw:commentRss>http://axels-site.local/link-why-i-told-my-friends-to-stop-using-whatsapp-and-telegram/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-	<post-id xmlns="com-wordpress:feed-additions:1">236</post-id>	</item>
 	</channel>
 </rss>

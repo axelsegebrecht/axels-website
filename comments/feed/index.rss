@@ -7,36 +7,36 @@
 	>
 <channel>
 	<title>Comments for Axel Segebrecht</title>
-	<atom:link href="http://axels-site.local/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>http://axels-site.local</link>
+	<atom:link href="https://www.axelsegebrecht.com/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.axelsegebrecht.com</link>
 	<description>Life, technology and everything</description>
 	<lastBuildDate>Wed, 21 Feb 2018 19:35:00 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	
+	<generator>https://wordpress.org/?v=4.9.6</generator>
 	<item>
 		<title>Comment on Saying good-bye to Facebook by Axel Segebrecht</title>
-		<link>http://axels-site.local/saying-good-bye-to-facebook/#comment-4</link>
+		<link>https://www.axelsegebrecht.com/saying-good-bye-to-facebook/#comment-4</link>
 		<dc:creator><![CDATA[Axel Segebrecht]]></dc:creator>
 		<pubDate>Wed, 21 Feb 2018 19:35:00 +0000</pubDate>
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=227#comment-4</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[Hey Andrew, I have found that Twitter works well for me and can understand how it may not for others. I think it’s about trying to conciously moderate the consumption while balancing mental health with participating in public discourse :)]]></description>
 		<content:encoded><![CDATA[<p>Hey Andrew, I have found that Twitter works well for me and can understand how it may not for others. I think it’s about trying to conciously moderate the consumption while balancing mental health with participating in public discourse 🙂</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>Comment on Saying good-bye to Facebook by Andrew Montague</title>
-		<link>http://axels-site.local/saying-good-bye-to-facebook/#comment-3</link>
+		<link>https://www.axelsegebrecht.com/saying-good-bye-to-facebook/#comment-3</link>
 		<dc:creator><![CDATA[Andrew Montague]]></dc:creator>
 		<pubDate>Wed, 21 Feb 2018 18:55:40 +0000</pubDate>
-		<guid isPermaLink="false">https://www.axelsegebrecht.com/?p=227#comment-3</guid>
+		<guid isPermaLink="false">https://www.axelsegebrecht.com/</guid>
 		<description><![CDATA[A post-Facebook existance is very tempting... But you&#039;re wrong about Twitter, it&quot;s everthing that is wrong with social media and so much more.]]></description>
 		<content:encoded><![CDATA[<p>A post-Facebook existance is very tempting&#8230; But you&#8217;re wrong about Twitter, it&#8221;s everthing that is wrong with social media and so much more.</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>Comment on My 3 Months with TresorIt and why I am thinking of returning to Google by My cloud storage and SaaS Strategy &#124; Axel Segebrecht</title>
-		<link>http://axels-site.local/my-3-months-with-tresorit-and-why-i-am-thinking-of-returning-to-google/#comment-2</link>
+		<link>https://www.axelsegebrecht.com/my-3-months-with-tresorit-and-why-i-am-thinking-of-returning-to-google/#comment-2</link>
 		<dc:creator><![CDATA[My cloud storage and SaaS Strategy &#124; Axel Segebrecht]]></dc:creator>
 		<pubDate>Sat, 13 Jan 2018 18:00:01 +0000</pubDate>
 		<guid isPermaLink="false">https://blog.axelsegebrecht.com/?p=78#comment-2</guid>
@@ -46,7 +46,7 @@
 	</item>
 	<item>
 		<title>Comment on My cloud storage and SaaS Strategy by My 3 Months with TresorIt and why I am thinking of returning to Google &#124; Axel Segebrecht</title>
-		<link>http://axels-site.local/my-cloud-storage-and-saas-strategy/#comment-1</link>
+		<link>https://www.axelsegebrecht.com/my-cloud-storage-and-saas-strategy/#comment-1</link>
 		<dc:creator><![CDATA[My 3 Months with TresorIt and why I am thinking of returning to Google &#124; Axel Segebrecht]]></dc:creator>
 		<pubDate>Sat, 13 Jan 2018 17:59:00 +0000</pubDate>
 		<guid isPermaLink="false">https://blog.axelsegebrecht.com/?p=101#comment-1</guid>

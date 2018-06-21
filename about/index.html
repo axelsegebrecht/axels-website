@@ -14,47 +14,47 @@
 <head>
 <base href="https://static.axelsegebrecht.com" />
 
-	<meta charset="UTF-8" />
-			
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
 
-		<!--[if lt IE 9]>
+<!--[if lt IE 9]>
 	<script src="https://static.axelsegebrecht.com/contents/ui/theme/scripts/ext/html5.js" type="text/javascript"></script>
 	<![endif]-->
-
-	<script type="text/javascript">
+<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
-
-	<script>var et_site_url='https://static.axelsegebrecht.com';var et_post_id='130';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+<script>var et_site_url='https://static.axelsegebrecht.com';var et_post_id='130';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
 </script><title>About | Axel Segebrecht</title>
 
-<!-- All in One SEO Pack 2.6.1 by Michael Torbert of Semper Fi Web Design[1045,1075] -->
 <link rel="author" href="https://plus.google.com/u/0/+AxelSegebrecht" />
 
 
-<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//apis.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
 
-<meta content="Extra Child v.2.0.97.1517089407" name="generator"/><link rel='stylesheet' id='ctf_styles-css'  href='https://static.axelsegebrecht.com/contents/lib/custom-twitter-feeds/css/ctf-styles.css' type='text/css' media='all' />
-<link rel='stylesheet' id='embedpress-css'  href='https://static.axelsegebrecht.com/contents/lib/embedpress/assets/css/embedpress.css' type='text/css' media='all' />
-<link rel='stylesheet' id='yop-public-css'  href='https://static.axelsegebrecht.com/contents/lib/yop-poll/public/assets/css/yop-poll-public.css' type='text/css' media='all' />
-<link rel='stylesheet' id='zurlcustom-style-css'  href='https://static.axelsegebrecht.com/contents/lib/z-url-preview/zurlplugin.css' type='text/css' media='all' />
+
+<meta content="Extra Child v.2.0.97.1517089407" name="generator" /><link rel='stylesheet' id='ctf_styles-css' href='https://static.axelsegebrecht.com/contents/lib/custom-twitter-feeds/css/ctf-styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress-css' href='https://static.axelsegebrecht.com/contents/lib/embedpress/assets/css/embedpress.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yop-public-css' href='https://static.axelsegebrecht.com/contents/lib/yop-poll/public/assets/css/yop-poll-public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='zurlcustom-style-css' href='https://static.axelsegebrecht.com/contents/lib/z-url-preview/zurlplugin.css' type='text/css' media='all' />
 <style id='zurlcustom-style-inline-css' type='text/css'>
 #at_zurlpreview img {
 				width: 100%;
 				max-width:100%;
  			}
 </style>
-<link rel='stylesheet' id='chld_thm_cfg_parent-css'  href='https://static.axelsegebrecht.com/contents/ui/theme/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='extra-style-css'  href='https://static.axelsegebrecht.com/contents/ui/theme-child/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='et-builder-googlefonts-cached-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic&#038;ver=4.9.6#038;subset=latin,latin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='jetpack-widget-social-icons-styles-css'  href='https://static.axelsegebrecht.com/contents/lib/jetpack/modules/widgets/social-icons/social-icons.css' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://static.axelsegebrecht.com/contents/lib/tablepress/css/default.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.9.6' type='text/css' media='all' />
-<link rel='stylesheet' id='jetpack_css-css'  href='https://static.axelsegebrecht.com/contents/lib/jetpack/css/jetpack.css' type='text/css' media='all' />
-<link rel='stylesheet' id='table-of-content-css'  href='https://static.axelsegebrecht.com/contents/lib/cm-table-of-content/assets/css/table-of-content-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_parent-css' href='https://static.axelsegebrecht.com/contents/ui/theme/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='extra-style-css' href='https://static.axelsegebrecht.com/contents/ui/theme-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic&#038;ver=4.9.6#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widget-social-icons-styles-css' href='https://static.axelsegebrecht.com/contents/lib/jetpack/modules/widgets/social-icons/social-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://static.axelsegebrecht.com/contents/lib/tablepress/css/default.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.9.6' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://static.axelsegebrecht.com/inc/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://static.axelsegebrecht.com/contents/lib/jetpack/css/jetpack.css' type='text/css' media='all' />
+<link rel='stylesheet' id='table-of-content-css' href='https://static.axelsegebrecht.com/contents/lib/cm-table-of-content/assets/css/table-of-content-frontend.css' type='text/css' media='all' />
 <style id='table-of-content-inline-css' type='text/css'>
 .cmtoc_table_of_contents_wrapper ul.cmtoc_table_of_contents_table li.cmtoc_level_0 a {
 		font-size: 25px;
@@ -80,36 +80,55 @@
 		font-size: 10px;
 		}
 </style>
-<script type='text/javascript' defer src='https://platform.twitter.com/widgets.js'></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=4.9.6'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var ctf = {"ajax_url":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://static.axelsegebrecht.com/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/inc/js/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php","wpLogin":"https:\/\/static.axelsegebrecht.com\/wp-login.php?redirect_to=https%3A%2F%2Fstatic.axelsegebrecht.com%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_record_wordpress_vote"},"apiParams":{"facebook":{"appId":""},"google":{"apiKey":"","clientId":""}},"captchaParams":{"imgPath":"https:\/\/static.axelsegebrecht.com\/contents\/plugins\/yop-poll\/public\/assets\/img\/","url":"https:\/\/static.axelsegebrecht.com\/contents\/plugins\/yop-poll\/app.php","accessibilityAlt":"Sound icon","accessibilityTitle":"Accessibility option: listen to a question and answer it!","accessibilityDescription":"Type below the <strong>answer<\/strong> to what you hear. Numbers or words:","explanation":"Click or touch the <strong>ANSWER<\/strong>","refreshAlt":"Refresh\/reload icon","refreshTitle":"Refresh\/reload: get new images and accessibility option!"},"voteParams":{"invalidPoll":"Invalid Poll","noAnswersSelected":"No answer selected","minAnswersRequired":"At least {min_answers_allowed} answer(s) required","maxAnswersRequired":"A max of {max_answers_allowed} answer(s) accepted","noAnswerForOther":"No other answer entered","noValueForCustomField":"{custom_field_name} is required","consentNotChecked":"You must agree to our terms and conditions","noCaptchaSelected":"Captcha is required","thankYou":"Thank you for your vote"},"resultsParams":{"singleVote":"vote","multipleVotes":"votes"}}};
 /* ]]> */
 </script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/yop-poll/public/assets/js/yop-poll-public.min.js'></script>
-<script type='text/javascript' defer src='https://apis.google.com/js/platform.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/postmessage.min.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/jquery.jetpack-resize.min.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/yop-poll/public/assets/js/yop-poll-public.min.js'></script>
+<script type='text/javascript' src='https://apis.google.com/js/platform.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/postmessage.min.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/jquery.jetpack-resize.min.js'></script>
 
 
-<link rel='dns-prefetch' href='//v0.wordpress.com'/>
-<link rel='dns-prefetch' href='//widgets.wp.com'/>
-<link rel='dns-prefetch' href='//s0.wp.com'/>
-<link rel='dns-prefetch' href='//s1.wp.com'/>
-<link rel='dns-prefetch' href='//s2.wp.com'/>
-<link rel='dns-prefetch' href='//0.gravatar.com'/>
-<link rel='dns-prefetch' href='//1.gravatar.com'/>
-<link rel='dns-prefetch' href='//2.gravatar.com'/>
-<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
-<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+
+
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" /><link rel="shortcut icon" href="https://res.cloudinary.com/axel/image/upload/v1529491169/IMG_5808_jopehf.jpg" />
-<!-- Jetpack Open Graph Tags -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+_paq.push(['trackVisibleContentImpressions']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.bebraver.uk/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '15']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
 <meta property="og:type" content="article" />
 <meta property="og:title" content="About" />
 <meta property="og:url" content="https://static.axelsegebrecht.com/about/" />
@@ -127,134 +146,94 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:description" content="Visit the post for more." />
 
-<!-- End Jetpack Open Graph Tags -->
 <link rel="icon" href="https://res.cloudinary.com/axel/w_32,h_32,c_fill/auto-mapping-folder/2017/07/cropped-IMG_7395.jpg" sizes="32x32" />
 <link rel="icon" href="https://res.cloudinary.com/axel/w_192,h_192,c_fill/auto-mapping-folder/2017/07/cropped-IMG_7395.jpg" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://res.cloudinary.com/axel/w_180,h_180,c_fill/auto-mapping-folder/2017/07/cropped-IMG_7395.jpg" />
 <meta name="msapplication-TileImage" content="https://res.cloudinary.com/axel/w_270,h_270,c_fill/auto-mapping-folder/2017/07/cropped-IMG_7395.jpg" />
-<style id="et-core-unified-cached-inline-styles">h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-size:21px}body{font-size:18px}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{line-height:1.3em}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif}body{font-family:'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif}#page-container{background-color:#fffaf2}#et-menu li a{font-size:18px}#et-navigation ul li,#et-navigation li a,#et-navigation>ul>li>a{font-weight:600;font-style:normal;text-transform:none;text-decoration:none}#main-header{background-color:#1e73be}@media only screen and (min-width:768px){#main-header .logo{height:48.8px;margin:15.6px 0}.header.left-right #et-navigation>ul>li>a{padding-bottom:31px}}@media only screen and (min-width:768px){.et-fixed-header #main-header .logo{height:40.8px;margin:19.6px 0}.et-fixed-header .header.left-right #et-navigation>ul>li>a{padding-bottom:32px}}</style></head>
+<link rel="stylesheet" id="et-core-unified-cached-inline-styles" href="https://static.axelsegebrecht.com/contents/cache/et/130/et-core-unified-1529563941312.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /></head>
 <body class="page-template-default page page-id-130 et_extra et_pb_pagebuilder_layout et_fixed_nav et_pb_gutters3 et_primary_nav_dropdown_animation_Default et_secondary_nav_dropdown_animation_Default  et_includes_sidebar et_minified_js et_minified_css">
-	<div id="page-container" class="page-container">
-				<!-- Header -->
-		<header class="header left-right">
-			
-			<!-- Main Header -->
-			<div id="main-header-wrapper">
-				<div id="main-header" data-fixed-height="80">
-					<div class="container">
-					<!-- ET Ad -->
-						
-						
-						<!-- Logo -->
-						<a class="logo" href="https://static.axelsegebrecht.com/" data-fixed-height="51">
-							<img src="https://res.cloudinary.com/axel/image/upload/v1529490947/axel_zycbwh.png" alt="Axel Segebrecht" id="logo" />
-						</a>
+<div id="page-container" class="page-container">
 
-						
-						<!-- ET Navigation -->
-						<div id="et-navigation" class="">
-							<ul id="et-menu" class="nav"><li id="menu-item-146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a href="/">Home</a></li>
+<header class="header left-right">
+
+<div id="main-header-wrapper">
+<div id="main-header" data-fixed-height="80">
+<div class="container">
+
+
+<a class="logo" href="https://static.axelsegebrecht.com/" data-fixed-height="51">
+<img src="https://res.cloudinary.com/axel/image/upload/v1529490947/axel_zycbwh.png" alt="Axel Segebrecht" id="logo" />
+</a>
+
+<div id="et-navigation" class="">
+<ul id="et-menu" class="nav"><li id="menu-item-146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a href="/">Home</a></li>
 <li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-130 current_page_item menu-item-145"><a href="https://static.axelsegebrecht.com/about/">About</a></li>
 <li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="https://static.axelsegebrecht.com/contact/">Contact</a></li>
-</ul>							<div id="et-mobile-navigation">
-			<span class="show-menu">
-				<div class="show-menu-button">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<p>Select Page</p>
-			</span>
-			<nav>
-			</nav>
-		</div> <!-- /#et-mobile-navigation -->						</div><!-- /#et-navigation -->
-					</div><!-- /.container -->
-				</div><!-- /#main-header -->
-			</div><!-- /#main-header-wrapper -->
-
-		</header>
-
-				<div id="main-content">
-	<div class="container">
-		<div id="content-area" class=" clearfix">
-			<div class="et_pb_extra_column_main">
-								<article id="post-130" class="post-130 page type-page status-publish has-post-thumbnail hentry">
-					<div class="post-wrap">
-												<h1 class="entry-title">About</h1>
-												<div class="post-content entry-content">
-							<div class="et_pb_section et_pb_section_0 et_section_regular">
-				
-				
-				
-				
-					<div class="et_pb_row et_pb_row_0">
-				<div class="et_pb_column et_pb_column_2_3 et_pb_column_0    et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
-				
-				
-				<div class="et_pb_text_inner">
-					<p><strong>I have a track record for delivering complex, enterprise web and digital objectives, for large national and international organisations, on time and on budget.</strong></p>
+</ul> <div id="et-mobile-navigation">
+<span class="show-menu">
+<div class="show-menu-button">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<p>Select Page</p>
+</span>
+<nav>
+</nav>
+</div>  </div>
+</div>
+</div>
+</div>
+</header>
+<div id="main-content">
+<div class="container">
+<div id="content-area" class=" clearfix">
+<div class="et_pb_extra_column_main">
+<article id="post-130" class="post-130 page type-page status-publish has-post-thumbnail hentry">
+<div class="post-wrap">
+<h1 class="entry-title">About</h1>
+<div class="post-content entry-content">
+<div class="et_pb_section et_pb_section_0 et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_2_3 et_pb_column_0    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<p><strong>I have a track record for delivering complex, enterprise web and digital objectives, for large national and international organisations, on time and on budget.</strong></p>
 <p>With a broad yet deep technical knowledge, and the expertise acquired through running my own business, I can bridge the gap between tech and business to safely deliver projects. I can bring over 20 years of experience managing projects in marketing and IT for clients in the UK and Europe. A strong consultative and marketing agency background means I can satisfy a wide range of challenging stakeholders’ needs effectively.</p>
 <p>Originally being from Germany and living in England for over 10 years, I have the ability to converse fluently in both English and German, which makes me an ideal candidate for international businesses with a German-speaking requirement.</p>
 <p>Selecting from Scrum, Agile, Waterfall or Prince 2 methodologies, I take a pragmatic approach to problem-solving and deliver outcomes both iteratively and collaboratively – which fits well with start-ups and those who want to drive growth at a faster pace.</p>
-				</div>
-			</div> <!-- .et_pb_text -->
-			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_1 et_pb_bg_layout_light  et_pb_text_align_left">
-				
-				
-				<div class="et_pb_text_inner">
-					<ul>
+</div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<ul>
 <li>I am passionate about creating successful customer experiences for both my clients and the customer</li>
 <li>I have long-term partnerships with clients through consistent delivery and results</li>
 <li>I add value by shaping the product in innovative and progressive ways, utilising the latest technologies when necessary</li>
 </ul>
-				</div>
-			</div> <!-- .et_pb_text -->
-			</div> <!-- .et_pb_column -->
-				
-				
-			</div> <!-- .et_pb_row --><div class="et_pb_row et_pb_row_1">
-				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2    et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module ">
-				<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://linkedin.com/in/axelsegebrecht" target="_blank">Connect on LinkedIn</a>
-			</div>
-			</div> <!-- .et_pb_column -->
-				
-				
-			</div> <!-- .et_pb_row -->
-				
-				
-			</div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_1 et_section_regular">
-				
-				
-				
-				
-					<div class="et_pb_row et_pb_row_2">
-				<div class="et_pb_column et_pb_column_1_2 et_pb_column_3    et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_light  et_pb_text_align_left">
-				
-				
-				<div class="et_pb_text_inner">
-					<h2>Professional Experience</h2>
-				</div>
-			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_accordion et_pb_accordion_0">
-				
-				
-				<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_0  et_pb_toggle_open">
-				
-				
-				<h3 class="et_pb_toggle_title">2017.07 – **present**: Project Owner (Omnigon, USA/UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_row et_pb_row_1">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_2    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module ">
+<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="https://linkedin.com/in/axelsegebrecht" target="_blank">Connect on LinkedIn</a>
+</div>
+</div> 
+</div> 
+</div> <div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_row et_pb_row_2">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_3    et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_2 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2>Professional Experience</h2>
+</div>
+</div> <div class="et_pb_module et_pb_accordion et_pb_accordion_0">
+<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_0  et_pb_toggle_open">
+<h3 class="et_pb_toggle_title">2017.07 – **present**: Project Owner (Omnigon, USA/UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Create overall project management documentation and work with the project teams to execute</li>
 <li>Monitor day-to-day activities of entire project team and ensure work is progressing as planned</li>
 <li>Work with clients to assess business needs and assist in establishing requirements</li>
@@ -264,25 +243,21 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <li>Manage client expectations, ensuring delivery of the highest quality service, and solicit and act on client feedback</li>
 <li>Present work to clients and participate in new business presentation opportunities</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_1  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2015.09 – 2017.07: Digital Marketing &amp; Senior Project Manager (Cranfield University, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_1  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2015.09 – 2017.07: Digital Marketing &amp; Senior Project Manager (Cranfield University, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Delivery of a business critical, enterprise scale web project as Senior Digital Project Manager using the Scrum methodology, and shaping digital governance. Responsible for managing a project team of 30 people directly and over 100 stakeholders across the business and suppliers.</li>
 <li>Designing and delivering digital marketing campaigns processes to improve inter-departmental communication and drive student engagement for the marketing and student recruitment teams</li>
 <li>Designing and implementing a solution to support the digital services team deliver marketing related outputs with more speed and certainty</li>
 <li>Shaping web architecture around Sitecore platform to leverage personalisation features for increased student engagement and recruitment</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2014.08 – 2015.09: Digital Services Manager (The University of Northampton, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2014.08 – 2015.09: Digital Services Manager (The University of Northampton, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Senior project manager delivering content separation of 10,000+ page website into distinct, customer-focused web channels to drive marketing’s recruitment efforts and increase user experience</li>
 <li>Introduced Agile (Scrum) methodology for digital project management, responsible for hire and management of multiple project management resources on £500,000+ web projects</li>
 <li>Responsible for maintaining and developing the University’s large estate (80+) of websites, campaign microsites and blogs, whilst managing a team of four direct reports of web/UX design, front-end development and content specialists</li>
@@ -291,77 +266,61 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <li>Lead the overall digital capability in the organisation, providing input to Digital Transformation Strategic Plan for £330m Waterside project</li>
 <li>Created a cloud-based digital strategy to deliver public &amp; private communications capability for long-term growth and continual change. Introduced SharePoint 2013, Office 365 and Azure hybrid cloud model.</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_3  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2014.06 – 2014.08: Interim Application Support Manager (University of Northampton, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_3  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2014.06 – 2014.08: Interim Application Support Manager (University of Northampton, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Leading a team of 16 direct reports of database and application specialists (Oracle, SharePoint 2013/Azure, Unit4/QL and Agresso), and a project team of six direct reports for a major digital project</li>
 <li>Responsible for creation of digital operations team to facilitate content separation project and the introduction of staff intranet and student portal (SharePoint 2013 in Azure)</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_4  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2012.10 – 2014.06: Web Manager (University of Northampton, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_4  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2012.10 – 2014.06: Web Manager (University of Northampton, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Responsible for business as usual and project management of websites of the University of Northampton and a team of two direct reports</li>
 <li>Requirements gathering and business analysis for business-critical enterprise scale web project</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_5  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2008.06 – **present**: Senior Digital Project Manager &amp; Director/Founder (be braver Ltd, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_5  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2008.06 – **present**: Senior Digital Project Manager &amp; Director/Founder (be braver Ltd, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Senior digital technology consultant to private investment groups in London, analysis and advice to management of technology businesses to establish value proposition and de-risking delivery during start-up/seed finance</li>
 <li>Digital strategy consulting and project manager for public and private projects (e-commerce, content marketing), and social media marketing providing increased efficiencies to existing processes through transformation initiatives</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_6  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">2005.09 – 2008.05: Digital Marketing &amp; Project Manager (eCross GmbH, Germany)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_6  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">2005.09 – 2008.05: Digital Marketing &amp; Project Manager (eCross GmbH, Germany)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Delivered improvements to operational processes, increasing product development turn-around times and driving growth through more effective marketing</li>
 <li>Delivered a new web application using Agile project methodology and built around an API/modular framework to plug-in telecommunications services (e-commerce, reseller portal, CMS)</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_7  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">1999.09 – 2005.08: Senior Marketing Consultant &amp; Director/Founder (brighter Computing Ltd, UK)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_7  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">1999.09 – 2005.08: Senior Marketing Consultant &amp; Director/Founder (brighter Computing Ltd, UK)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Digital marketing strategy and execution for small and medium-sized enterprises, providing Search Engine Optimisation (SEO) and Search Engine Marketing (SEM) consulting</li>
 <li>Provided consultancy and project management services to businesses reducing cost base and driving growth through delivery of projects using Agile and Scrum methodology with continuous process improvement at its heart</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle --><div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_8  et_pb_toggle_close">
-				
-				
-				<h3 class="et_pb_toggle_title">1995.03 – 1999.08: Marketing Manager &amp; Director/Founding Partner (Communications Network Services, Germany)</h3>
-				<div class="et_pb_toggle_content clearfix">
-					<ul>
+</div> 
+</div> <div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_8  et_pb_toggle_close">
+<h3 class="et_pb_toggle_title">1995.03 – 1999.08: Marketing Manager &amp; Director/Founding Partner (Communications Network Services, Germany)</h3>
+<div class="et_pb_toggle_content clearfix">
+<ul>
 <li>Founding partner and director in a leading full-service marketing agency focusing on graphic and website design (HTML/CSS/JS), media and video production services to regional clients</li>
 <li>Responsible for managing four direct reports and delivering client’s programmes and marketing objectives</li>
 </ul>
-				</div> <!-- .et_pb_toggle_content -->
-			</div> <!-- .et_pb_toggle -->
-			</div> <!-- .et_pb_accordion -->
-			</div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2 et_pb_column_4    et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_light  et_pb_text_align_left">
-				
-				
-				<div class="et_pb_text_inner">
-					<h2>Skills</h2>
+</div> 
+</div> 
+</div> 
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_4    et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_3 et_pb_bg_layout_light  et_pb_text_align_left">
+<div class="et_pb_text_inner">
+<h2>Skills</h2>
 <h3>Project and Change Management (Methodology and tools)</h3>
 <ul>
 <li>Agile, MS Project, Waterfall and Prince2, Jira, Basecamp, Trello, Zenkit, Taiga</li>
@@ -372,7 +331,7 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 </ul>
 <h3>Content Management, CRM &amp; E-Commerce</h3>
 <ul>
-<li>Sitecore XP8, Wordpress, Drupal, SharePoint 2010 &amp; 2013 (including Office 365), Microsoft Dynamics, SugarCRM, Magento, Salesforce CRM, Akero</li>
+<li>Sitecore XP8, WordPress, Drupal, SharePoint 2010 &amp; 2013 (including Office 365), Microsoft Dynamics, SugarCRM, Magento, Salesforce CRM, Akero</li>
 </ul>
 <h3>Web Servers &amp; Operations</h3>
 <ul>
@@ -399,44 +358,36 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <ul>
 <li>Achieved school leavers certificate (O-Levels) and German equivalent pass marks in GCSE subjects (Study German, English, French, Physics, Maths, Biology, Chemistry, Art, History)</li>
 </ul>
-				</div>
-			</div> <!-- .et_pb_text -->
-			</div> <!-- .et_pb_column -->
-				
-				
-			</div> <!-- .et_pb_row -->
-				
-				
-			</div> <!-- .et_pb_section -->													</div>
-					</div><!-- /.post-wrap -->
-				</article>
-											</div><!-- /.et_pb_extra_column.et_pb_extra_column_main -->
-
-			
-		</div> <!-- #content-area -->
-	</div> <!-- .container -->
-</div> <!-- #main-content -->
-
-	
-	<footer id="footer" class="footer_columns_3">
-		<div class="container">
-	<div class="et_pb_extra_row container-width-change-notify">
-						<div class="et_pb_extra_column odd column-1">
-					<div id="categories-4" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categories</h4>		<ul>
-	<li class="cat-item cat-item-10"><a href="https://static.axelsegebrecht.com/category/brexit/" >Brexit</a>
+</div>
+</div> 
+</div> 
+</div> 
+</div>  </div>
+</div>
+</article>
+</div>
+</div> 
+</div> 
+</div> 
+<footer id="footer" class="footer_columns_3">
+<div class="container">
+<div class="et_pb_extra_row container-width-change-notify">
+<div class="et_pb_extra_column odd column-1">
+<div id="categories-4" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categories</h4> <ul>
+<li class="cat-item cat-item-10"><a href="https://static.axelsegebrecht.com/category/brexit/">Brexit</a>
 </li>
-	<li class="cat-item cat-item-2"><a href="https://static.axelsegebrecht.com/category/links-of-interest/" >Links of interest</a>
+<li class="cat-item cat-item-2"><a href="https://static.axelsegebrecht.com/category/links-of-interest/">Links of interest</a>
 </li>
-	<li class="cat-item cat-item-14"><a href="https://static.axelsegebrecht.com/category/opinions-hearsay-and-fantastic-stories/" >Opinions, Hearsay and Fantastic Stories</a>
+<li class="cat-item cat-item-14"><a href="https://static.axelsegebrecht.com/category/opinions-hearsay-and-fantastic-stories/">Opinions, Hearsay and Fantastic Stories</a>
 </li>
-	<li class="cat-item cat-item-21"><a href="https://static.axelsegebrecht.com/category/privacy-liberty-equality/" >Privacy, Liberty and Equality</a>
+<li class="cat-item cat-item-21"><a href="https://static.axelsegebrecht.com/category/privacy-liberty-equality/">Privacy, Liberty and Equality</a>
 </li>
-	<li class="cat-item cat-item-39"><a href="https://static.axelsegebrecht.com/category/tricks-and-tutorials/" >Tricks and Tutorials</a>
+<li class="cat-item cat-item-39"><a href="https://static.axelsegebrecht.com/category/tricks-and-tutorials/">Tricks and Tutorials</a>
 </li>
-		</ul>
-</div> <!-- end .et_pb_widget -->				</div>
-								<div class="et_pb_extra_column even column-2">
-					<div id="tag_cloud-5" class="et_pb_widget widget_tag_cloud"><h4 class="widgettitle">Tags</h4><div class="tagcloud"><a href="https://static.axelsegebrecht.com/tag/bear-writer/" class="tag-cloud-link tag-link-69 tag-link-position-1" style="font-size: 8pt;" aria-label="Bear Writer (1 item)">Bear Writer</a>
+</ul>
+</div>  </div>
+<div class="et_pb_extra_column even column-2">
+<div id="tag_cloud-5" class="et_pb_widget widget_tag_cloud"><h4 class="widgettitle">Tags</h4><div class="tagcloud"><a href="https://static.axelsegebrecht.com/tag/bear-writer/" class="tag-cloud-link tag-link-69 tag-link-position-1" style="font-size: 8pt;" aria-label="Bear Writer (1 item)">Bear Writer</a>
 <a href="https://static.axelsegebrecht.com/tag/bmw-i3/" class="tag-cloud-link tag-link-80 tag-link-position-2" style="font-size: 8pt;" aria-label="BMW i3 (1 item)">BMW i3</a>
 <a href="https://static.axelsegebrecht.com/tag/brandyourself-com/" class="tag-cloud-link tag-link-67 tag-link-position-3" style="font-size: 8pt;" aria-label="Brandyourself.com (1 item)">Brandyourself.com</a>
 <a href="https://static.axelsegebrecht.com/tag/cars/" class="tag-cloud-link tag-link-6 tag-link-position-4" style="font-size: 8pt;" aria-label="Cars (1 item)">Cars</a>
@@ -481,9 +432,9 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <a href="https://static.axelsegebrecht.com/tag/twitter/" class="tag-cloud-link tag-link-58 tag-link-position-43" style="font-size: 11.405405405405pt;" aria-label="Twitter (2 items)">Twitter</a>
 <a href="https://static.axelsegebrecht.com/tag/ways-of-working/" class="tag-cloud-link tag-link-8 tag-link-position-44" style="font-size: 8pt;" aria-label="Ways of Working (1 item)">Ways of Working</a>
 <a href="https://static.axelsegebrecht.com/tag/whatsapp/" class="tag-cloud-link tag-link-60 tag-link-position-45" style="font-size: 8pt;" aria-label="WhatsApp (1 item)">WhatsApp</a></div>
-</div> <!-- end .et_pb_widget -->				</div>
-								<div class="et_pb_extra_column even column-4">
-					<div id="text-7" class="et_pb_widget widget_text"><h4 class="widgettitle">About</h4>			<div class="textwidget"><aside id="text-2" class="widget widget_text">
+</div>  </div>
+<div class="et_pb_extra_column even column-4">
+<div id="text-7" class="et_pb_widget widget_text"><h4 class="widgettitle">About</h4> <div class="textwidget"><aside id="text-2" class="widget widget_text">
 <div class="textwidget">
 <p>I am a <a href="https://www.bebraver.uk/axel/" target="_blank" rel="noopener">digital project manager and Scrum Product Owner</a> and use this blog to share links and thoughts on a wider range of subjects, like privacy, climate change, science and politics.</p>
 <p><a href="https://www.bebraver.uk/axel/#articles" target="_blank" rel="noopener">Visit my blog at be braver</a> for topics on project management, digital solutions architecture and Agile/Scrum topics. You can also find me on <a href="https://www.medium.com/@axelsegebrecht">medium.com</a>.</p>
@@ -493,47 +444,43 @@ var objectL10n = {"yopPollParams":{"urlParams":{"ajax":"https:\/\/static.axelseg
 <div class="textwidget"><a href="https://www.bebraver.uk/managed-web-hosting/" target="_blank" rel="noopener">be braver with <strong>managed web hosting</strong></a></div>
 </aside>
 </div>
-		</div> <!-- end .et_pb_widget -->				</div>
-					</div>
+</div>  </div>
 </div>
-		<div id="footer-bottom">
-			<div class="container">
+</div>
+<div id="footer-bottom">
+<div class="container">
 
-				<!-- Footer Info -->
-				<p id="footer-info">Designed by <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p>
+<p id="footer-info">Designed by <a href="https://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="https://www.wordpress.org">WordPress</a></p>
 
-				<!-- Footer Navigation -->
-								<div id="footer-nav">
-											<ul class="et-extra-social-icons" style="">
-																																																																			<li class="et-extra-social-icon twitter">
-								<a href="https://twitter.com/axelsegebrecht" class="et-extra-icon et-extra-icon-background-none et-extra-icon-twitter"></a>
-							</li>
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				</ul>
-									</div> <!-- /#et-footer-nav -->
-				
-			</div>
-		</div>
-	</footer>
-	</div> <!-- #page-container -->
-
-	
-		<script type="text/javascript">
+<div id="footer-nav">
+<ul class="et-extra-social-icons" style="">
+<li class="et-extra-social-icon twitter">
+<a href="https://twitter.com/axelsegebrecht" class="et-extra-icon et-extra-icon-background-none et-extra-icon-twitter"></a>
+</li>
+</ul>
+</div> 
+</div>
+</div>
+</footer>
+</div> 
+<script type="text/javascript">
 		var et_animation_data = [];
 	</script>
-	<script type='text/javascript' defer src='https://s0.wp.com/contents/js/devicepx-jetpack.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/inc/js/masonry.min.js'></script>
+<noscript><p><img src="//stats.bebraver.uk/piwik.php?idsite=15&rec=1" style="border:0;" alt="" /></p></noscript>
+<script type='text/javascript' src='https://s0.wp.com/contents/js/devicepx-jetpack.js?ver=201825'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/inc/js/masonry.min.js'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var EXTRA = {"images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/images\/","ajaxurl":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php","your_rating":"Your Rating:","item_in_cart_count":"%d Item in Cart","items_in_cart_count":"%d Items in Cart","item_count":"%d Item","items_count":"%d Items","rating_nonce":"a0ddaadb70","timeline_nonce":"403c28db0b","blog_feed_nonce":"adf6acae67","error":"There was a problem, please try again.","contact_error_name_required":"Name field cannot be empty.","contact_error_email_required":"Email field cannot be empty.","contact_error_email_invalid":"Please enter a valid email address.","is_ab_testing_active":"","is_cache_plugin_active":"no"};
+var EXTRA = {"images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/images\/","ajaxurl":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php","your_rating":"Your Rating:","item_in_cart_count":"%d Item in Cart","items_in_cart_count":"%d Items in Cart","item_count":"%d Item","items_count":"%d Items","rating_nonce":"cf4dabeaa8","timeline_nonce":"044d03f790","blog_feed_nonce":"7b4eaed481","error":"There was a problem, please try again.","contact_error_name_required":"Name field cannot be empty.","contact_error_email_required":"Email field cannot be empty.","contact_error_email_invalid":"Please enter a valid email address.","is_ab_testing_active":"","is_cache_plugin_active":"no"};
 var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
-var et_pb_custom = {"ajaxurl":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/images","builder_images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/includes\/builder\/images","et_frontend_nonce":"08a51400c7","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"a5a74ea57a","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"130","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
+var et_pb_custom = {"ajaxurl":"https:\/\/static.axelsegebrecht.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/images","builder_images_uri":"https:\/\/static.axelsegebrecht.com\/contents\/themes\/Extra\/includes\/builder\/images","et_frontend_nonce":"ae67e42ca4","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"9d3b06c309","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","ignore_waypoints":"no","is_divi_theme_used":"","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"130","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
 var et_pb_box_shadow_elements = [];
 /* ]]> */
 </script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/ui/theme/scripts/scripts.min.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/jetpack/modules/likes/queuehandler.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/lazy-images/js/lazy-images.min.js'></script>
-<script type='text/javascript' defer src='https://static.axelsegebrecht.com/contents/ui/theme/core/admin/js/common.js'></script>
-<style id="et-core-unified-cached-inline-styles-2">.et_pb_accordion_0.et_pb_accordion h5.et_pb_toggle_title,.et_pb_accordion_0.et_pb_accordion h1.et_pb_toggle_title,.et_pb_accordion_0.et_pb_accordion h2.et_pb_toggle_title,.et_pb_accordion_0.et_pb_accordion h3.et_pb_toggle_title,.et_pb_accordion_0.et_pb_accordion h4.et_pb_toggle_title,.et_pb_accordion_0.et_pb_accordion h6.et_pb_toggle_title{text-transform:none}</style></body>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/ui/theme/scripts/scripts.min.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/jetpack/modules/likes/queuehandler.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/lib/jetpack/_inc/build/lazy-images/js/lazy-images.min.js'></script>
+<script type='text/javascript' src='https://static.axelsegebrecht.com/contents/ui/theme/core/admin/js/common.js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1286681e89","applicationID":"132644741","transactionName":"MVZWNRcEX0tUARBdVwgcdQIRDF5WGhIFU10=","queueTime":0,"applicationTime":1653,"atts":"HRFVQ18eTEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
